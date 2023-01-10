@@ -48,3 +48,10 @@ btn.addEventListener("click", () => {
   items.push({ id: id, v: v });
   localStorage.setItem("todo", JSON.stringify(items));
 });
+
+let clear = document.querySelector("#clear")
+
+clear.addEventListener("click", () => {
+  localStorage.clear()
+  to_do.innerHTML = ""
+})
